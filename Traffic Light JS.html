@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg">
+    <div>
+        <h1 style="text-align:center; margin:10px 0px 20px 0px;">Traffic Light</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bu d-flex flex-column justify-content-center">
+                <button class="bu1 d-flex flex-row justify-content-center" id="stopButton" onclick="stop()">Stop</button>
+                <button class="bu2 d-flex flex-row justify-content-center" id="readyButton" onclick="ready()">Ready</button>
+                <button class="bu3 d-flex flex-row justify-content-center" id="goButton" onclick="go()">Go</button>
+            </div>
+            <div class="card d-flex flex-column justify-content-center">
+                <div class="space1 d-flex flex-row justify-content-start" id="stopLight" onclick="stop()"> </div>
+                <div class="space2 d-flex flex-row justify-content-center" id="readyLight" onclick="ready()"> </div>
+                <div class="space3 d-flex flex-row justify-content-end" id="goLight" onclick="go()"> </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
